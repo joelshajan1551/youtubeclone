@@ -23,7 +23,6 @@
   right: -3px;
   background-color: #cc0000;
   color: white;
-  font-family: Roboto, Arial;
   font-size: 11px;
   padding-left: 5px;
   padding-right: 5px;
@@ -42,7 +41,7 @@
 .uploadcontainer .tooltip,
 .appscontainer .tooltip,
 .notificationcontainer .tooltip{
-  font-family: Roboto, Arial;
+
   position: absolute;
   background-color: gray;
   color: white;

@@ -1,99 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>youtube</title>
-    <link rel="stylesheet" href="styles/yt.css" />
-    <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="styles/head.css" />
-    <link rel="stylesheet" href="styles/left.css" />
-    <link rel="stylesheet" href="styles/middle.css" />
-    <link rel="stylesheet" href="styles/right.css" />
-    <link rel="stylesheet" href="styles/sidebar.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="head">
-      <div class="left">
-        <img class="menu" src="logos/hamburger-menu.svg" alt="" />
-        <img class="ytlogo" src="logos/youtube-logo.svg" alt="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>youtube</title>
+  <link rel="stylesheet" href="styles/yt.css" />
+  <link rel="stylesheet" href="styles/general.css" />
+  <link rel="stylesheet" href="styles/head.css" />
+  <link rel="stylesheet" href="styles/left.css" />
+  <link rel="stylesheet" href="styles/middle.css" />
+  <link rel="stylesheet" href="styles/right.css" />
+  <link rel="stylesheet" href="styles/sidebar.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<!--put position absolute inside position relative -->
+
+<body>
+
+  <header class="head">
+    <div class="left">
+      <img class="menu" src="logos/hamburger-menu.svg" alt="" />
+      <img class="ytlogo" src="logos/youtube-logo.svg" alt="" />
+    </div>
+    <div class="middle">
+      <input class="searchbar" type="text" placeholder="Search" />
+      <button class="searchbutton">
+        <img class="searchicon" src="logos/search.svg" alt="" />
+        <div class="tooltip">search</div>
+      </button>
+      <button class="voicesearch">
+        <img class="voiceicon" src="logos/voice-search-icon.svg" alt="" />
+        <div class="tooltip">search with your voice</div>
+      </button>
+    </div>
+    <div class="right">
+      <div class="uploadcontainer">
+        <img class="upload" src="logos/upload.svg" alt="" />
+        <div class="tooltip">Create</div>
       </div>
-      <div class="middle">
-        <input class="searchbar" type="text" placeholder="Search" />
-        <button class="searchbutton">
-          <img class="searchicon" src="logos/search.svg" alt="" />
-          <div class="tooltip">search</div>
-        </button>
-        <button class="voicesearch">
-          <img class="voiceicon" src="logos/voice-search-icon.svg" alt="" />
-          <div class="tooltip">search with your voice</div>
-        </button>
-      </div>
-      <div class="right">
-        <div class="uploadcontainer">
-           <img class="upload" src="logos/upload.svg" alt="" />
-           <div class="tooltip">Create</div>
-        </div>
-       <div class="appscontainer">
+      <div class="appscontainer">
         <img class="apps" src="logos/youtube-apps.svg" alt="" />
         <div class="tooltip">youtube apps</div>
-       </div>
-    
-        <div class="notificationcontainer">
-          <img class="notifications" src="logos/notifications.svg" alt="" />
-          <div class="notificationcount">
-            3
-          </div>
-          <div class="tooltip">notifications</div>
-          </div>
-      
-        
-        <img class="userpicture" src="logos/desktop-4k-forest-aerial-view-3wmpmgz6xjvrb5b2.jpeg" alt="" />
       </div>
+
+      <div class="notificationcontainer">
+        <img class="notifications" src="logos/notifications.svg" alt="" />
+        <div class="notificationcount">
+          3
+        </div>
+        <div class="tooltip">notifications</div>
+      </div>
+
+
+      <img class="userpicture" src="logos/desktop-4k-forest-aerial-view-3wmpmgz6xjvrb5b2.jpeg" alt="" />
     </div>
+  </header>
 
-    <div class="sidebar">
-        <div class="sidebarlink">
-          <img class="sidebarlogos" src="logos/home.svg" alt="">
-          <div>Home</div>
-        </div>  
-        <div class="sidebarlink">
-          <img class="sidebarlogos" src="logos/explore.svg" alt="">
-          <div>Explore</div>
-        </div>  
-        <div class="sidebarlink">
-          <img class="sidebarlogos" src="logos/subscriptions.svg" alt="">
-          <div>Subscriptions</div>
-        </div>  
-        <div class="sidebarlink">
-          <img class="sidebarlogos" src="logos/originals.svg" alt="">
-          <div>Originals</div>
-        </div>  
-        <div class="sidebarlink">
-          <img class="sidebarlogos" src="logos/youtube-music.svg" alt="">
-          <div>Youtube-music</div>
-        </div>  
-        <div class="sidebarlink">
-          <img class="sidebarlogos" src="logos/library.svg" alt="">
-          <div>Library</div>
-        </div>  
+  <nav class="sidebar">
+    <div class="sidebarlink">
+      <img class="sidebarlogos" src="logos/home.svg" alt="">
+      <div>Home</div>
     </div>
-
-
-    <div class="videogrid">
+    <div class="sidebarlink">
+      <img class="sidebarlogos" src="logos/explore.svg" alt="">
+      <div>Explore</div>
+    </div>
+    <div class="sidebarlink">
+      <img class="sidebarlogos" src="logos/subscriptions.svg" alt="">
+      <div>Subscriptions</div>
+    </div>
+    <div class="sidebarlink">
+      <img class="sidebarlogos" src="logos/originals.svg" alt="">
+      <div>Originals</div>
+    </div>
+    <div class="sidebarlink">
+      <img class="sidebarlogos" src="logos/youtube-music.svg" alt="">
+      <div>Youtube-music</div>
+    </div>
+    <div class="sidebarlink">
+      <img class="sidebarlogos" src="logos/library.svg" alt="">
+      <div>Library</div>
+    </div>
+  </nav>
+  <main>
+    <section class="videogrid">
+      <a href="https://youtu.be/n2RNcPRtAiY">
       <div class="videopreview">
         <div class="thumbnailrow">
           <img class="thumbnail" src="thumbnails/1.webp" alt="" />
           <div class="time">
-             14:20
+            14:20
           </div>
         </div>
         <div class="videoinfogrid">
@@ -109,12 +110,13 @@
           </div>
         </div>
       </div>
+    </a>
       <div class="videopreview">
         <div class="thumbnailrow">
           <img class="thumbnail" src="thumbnails/2.webp" alt="" />
           <div class="time">
             22:14
-         </div>   
+          </div>
         </div>
         <div class="videoinfogrid">
           <div class="channelpicture">
@@ -133,7 +135,7 @@
           <img class="thumbnail" src="thumbnails/3.webp" alt="" />
           <div class="time">
             8:22
-         </div>
+          </div>
         </div>
         <div class="videoinfogrid">
           <div class="channelpicture">
@@ -151,7 +153,7 @@
           <img class="thumbnail" src="thumbnails/4.webp" alt="" />
           <div class="time">
             9:13
-         </div>
+          </div>
         </div>
         <div class="videoinfogrid">
           <div class="channelpicture">
@@ -172,7 +174,7 @@
           <img class="thumbnail" src="thumbnails/5.webp" alt="" />
           <div class="time">
             22:09
-         </div>
+          </div>
         </div>
         <div class="videoinfogrid">
           <div class="channelpicture">
@@ -192,7 +194,7 @@
           <img class="thumbnail" src="thumbnails/6.webp" alt="" />
           <div class="time">
             11:17
-         </div>
+          </div>
         </div>
         <div class="videoinfogrid">
           <div class="channelpicture">
@@ -205,6 +207,8 @@
           </div>
         </div>
       </div>
-    </div>
-  </body>
+    </section>
+  </main>
+</body>
+
 </html>

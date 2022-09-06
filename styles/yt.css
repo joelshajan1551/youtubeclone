@@ -1,5 +1,6 @@
 .thumbnail {
   width: 100%;
+
 }
 .title {
   margin-top: 0px;
@@ -17,6 +18,7 @@
 .thumbnailrow {
   margin-bottom: 8px;
   position: relative;
+
 }
 .stats,
 .channelname {
@@ -31,11 +33,33 @@
   grid-template-columns: 50px 1fr;
 }
 .videogrid {
+ 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 15px;
   row-gap: 40px;
+  text-decoration: none;
+
+  
 }
+@media(max-width: 750px) {
+  .videogrid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(min-width: 751px) and (max-width: 999px){
+  .videogrid{
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px){
+  .videogrid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .time{
   background-color: black;
   color: white;
@@ -43,13 +67,9 @@
   bottom: 10px;
   right: 8px;
   border-radius: 2px;
-  font-family: Roboto, Arial;
   font-weight: 500;
   font-size: 12px;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 4px;
 
 }
 
